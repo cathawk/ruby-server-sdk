@@ -77,7 +77,8 @@ module LaunchDarkly
     end
     private_class_method :new
 
-    protected attr_reader :name, :anonymous, :attributes
+    attr_reader :name, :anonymous, :attributes
+    protected :name, :anonymous, :attributes
 
     #
     # @return [Array<Reference>] Returns the private attributes associated with this LDContext

@@ -109,7 +109,8 @@ module LaunchDarkly
     end
     private_class_method :new
 
-    protected attr_reader :components
+    attr_reader :components
+    protected :components
 
     #
     # Creates a Reference from a string. For the supported syntax and examples,
